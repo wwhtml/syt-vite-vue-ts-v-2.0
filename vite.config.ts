@@ -46,12 +46,12 @@ export default defineConfig({
   server: {
     host: "0.0.0.0",
     port: 9999,
-    open: true
-    // proxy: {
-    //   "/api": {
-    //     target: "http://syt.atguigu.cn",
-    //     changeOrigin: true
-    //   }
-    // }
+    open: true,
+    proxy: {
+      "/api": {
+        target: "http://syt.atguigu.cn",
+        changeOrigin: true
+      }
+    }
   }
 });
