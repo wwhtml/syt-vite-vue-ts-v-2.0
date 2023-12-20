@@ -98,7 +98,7 @@ const routes: RouteRecordRaw[] = [
     path: "/information",
     name: "information",
     component: () => import("@/views/information/information.vue"),
-    redirect: "/information/contact",
+    // redirect: "/information/contact",
     children: [
       {
         path: "contact",
