@@ -1,4 +1,4 @@
-import { createRouter, createWebHistory /* createWebHashHistory */ } from "vue-router";
+import { createRouter, createWebHistory, createWebHashHistory } from "vue-router";
 import routes from "./routes";
 
 //引入进度条
@@ -9,9 +9,10 @@ import "nprogress/nprogress.css";
 import { useUserStore } from "@/stores/index";
 console.log(import.meta);
 const router = createRouter({
+  // history: createWebHistory(),
   // history: createWebHistory(import.meta.env.BASE_URL),
-  history: createWebHistory(import.meta.env.BASE_URL),
   // history: createWebHashHistory(),
+  history: createWebHashHistory(import.meta.env.BASE_URL),
   routes: routes
 });
 console.log(router);
