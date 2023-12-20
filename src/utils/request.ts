@@ -7,7 +7,7 @@ import { ElMessage } from "element-plus";
 // import { useUserStore } from "@/stores/index";
 
 const instance: AxiosInstance = axios.create({
-  baseURL: "/api",
+  baseURL: "http://syt.atguigu.cn/api",
   timeout: 5000 //超时设置
 });
 
