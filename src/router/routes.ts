@@ -88,6 +88,7 @@ const routes: RouteRecordRaw[] = [
     meta: {
       requiresAuth: false
     },
+
     component: () => import("@/views/support/support.vue")
   },
   /***************************************************************** 
