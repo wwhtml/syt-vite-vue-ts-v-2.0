@@ -1,0 +1,10 @@
+// 样式初始化
+@import "normalize.css";
+// 通用样式
+@import "./common.scss";
+//组件公用样式
+@import "./element-plus.scss";
+//markdown
+@import "./markdown.scss";
+//动画
+@import "./transition.scss";
