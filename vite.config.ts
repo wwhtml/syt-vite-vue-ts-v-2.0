@@ -10,7 +10,7 @@ import { ElementPlusResolver } from "unplugin-vue-components/resolvers";
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: "syt-vue3-vite-ts-2.0",
+  base: "/syt-vue3-vite-ts-2.0/",
   plugins: [
     vue(),
     vueJsx(),
