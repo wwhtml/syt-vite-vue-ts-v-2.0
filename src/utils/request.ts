@@ -6,12 +6,16 @@ import { ElMessage } from "element-plus";
 //store
 // import { useUserStore } from "@/stores/index";
 
+const viteEnv = import.meta.env;
+console.log(viteEnv);
+
+// const baseURL = viteEnv.MODE === "development" ? viteEnv.VITE_BASE_API : viteEnv.VITE_BASE_API_HTTP;
+const baseURL = import.meta.env.VITE_BASE_API;
+
 const instance: AxiosInstance = axios.create({
-  baseURL: "http://syt.atguigu.cn/api",
-  // baseURL: "/api",
+  baseURL,
   timeout: 5000 //超时设置111111111
 });
-
 /**
  * @description: 请求拦截器
  * @returns {*}
